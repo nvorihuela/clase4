@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7673" started-at="2020-09-28T20:19:50 ART" finished-at="2020-09-28T20:19:58 ART">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7673" started-at="2020-09-28T20:19:50 ART" finished-at="2020-09-28T20:19:58 ART">
+      <class name="pruebas.Test_Laboratorio4_E2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="setUp" is-config="true" duration-ms="12194" started-at="2020-09-28T20:19:38 ART" finished-at="2020-09-28T20:19:50 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="crearCuentaInvalida(java.lang.String)[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="crearCuentaInvalida" duration-ms="2457" started-at="2020-09-28T20:19:51 ART" data-provider="Datos registro inválido XLSX" finished-at="2020-09-28T20:19:54 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crearCuentaInvalida -->
+        <test-method status="PASS" signature="crearCuentaInvalida(java.lang.String)[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="crearCuentaInvalida" duration-ms="2014" started-at="2020-09-28T20:19:54 ART" data-provider="Datos registro inválido XLSX" finished-at="2020-09-28T20:19:56 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[email2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crearCuentaInvalida -->
+        <test-method status="PASS" signature="crearCuentaInvalida(java.lang.String)[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="crearCuentaInvalida" duration-ms="1982" started-at="2020-09-28T20:19:56 ART" data-provider="Datos registro inválido XLSX" finished-at="2020-09-28T20:19:58 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[email3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crearCuentaInvalida -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="quit" is-config="true" duration-ms="1327" started-at="2020-09-28T20:19:58 ART" finished-at="2020-09-28T20:19:59 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- pruebas.Test_Laboratorio4_E2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
