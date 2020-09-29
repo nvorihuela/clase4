@@ -17,7 +17,7 @@ import paginas.PaginaInicio;
 import paginas.PaginaLogin;
 
 
-public class Laboratorio3_E2 {
+public class Test_Laboratorio3_E2 {
 	WebDriver driver;
 	String rutaDriver= "..\\EducacionIt\\Drivers\\chromedriver.exe";
 	String urlPrueba = "http://automationpractice.com/index.php";

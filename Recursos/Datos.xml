@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Usuarios>
+	<Usuario>
+		<user>Nadia</user>
+		<clave>Clave123</clave>
+	</Usuario>
+
+	<Usuario>
+		<user>Pepe</user>
+		<clave>Prueba414</clave>
+	</Usuario>
+</Usuarios>

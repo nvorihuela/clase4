@@ -5,6 +5,7 @@ import org.testng.annotations.*;
 import paginas.PaginaInicio;
 import paginas.PaginaLogin;
 import utilidades.DatosExcel;
+import utilidades.Screenshots;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +14,7 @@ public class Test_Laboratorio4_E2 {
 	WebDriver driver;
 	String rutaDriver = "..\\EducacionIt\\Drivers\\chromedriver.exe";
 	String urlPrueba = "http://automationpractice.com/index.php";
+	String urlEvidencia ="..\\EducacionIt\\Evidencias";
 
 	@BeforeSuite
 	public void setUp() {
@@ -22,7 +24,7 @@ public class Test_Laboratorio4_E2 {
 	}
 	
 	@Test (dataProvider="Datos registro inválido XLSX")
-	public void  crearCuentaInvalida(String email) {
+	public void  crearCuentaInvalida(String email) throws Exception {
 		PaginaInicio objInicio = new PaginaInicio (driver);
 		objInicio.clickLogin();
 		
@@ -32,7 +34,7 @@ public class Test_Laboratorio4_E2 {
 		
 		
 		Assert.assertEquals(objLogin.getTitulo(), "AUTHENTICATION");
-		
+		Screenshots.screenshot(urlEvidencia, "TestRegistroInvalido", driver);
 	}
 	
 	@DataProvider (name="Datos registro inválido XLSX")

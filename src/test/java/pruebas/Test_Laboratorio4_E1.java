@@ -6,6 +6,7 @@ import org.testng.annotations.*;
 import paginas.PaginaInicio;
 import paginas.PaginaLogin;
 import utilidades.DatosExcel;
+import utilidades.DatosXML;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,7 +24,7 @@ public class Test_Laboratorio4_E1 {
 		driver.get(urlPrueba);
 	}
 	
-	@Test (priority=0, description="Prueba Login inválido", dataProvider="Datos login inválido XLSX")
+	@Test (priority=0, description="Prueba Login inválido", dataProvider="Datos login inválido XML")
 	public void ingresoCuentaInvalida(String usuario, String clave) {
 		PaginaInicio objInicio = new PaginaInicio(driver);
 		objInicio.clickLogin();
@@ -56,7 +57,14 @@ public class Test_Laboratorio4_E1 {
 		Object[][] datos= DatosExcel.leerExcel(rutaExcel,nombreHoja);
 		return datos;
 	}
-
+	
+	@DataProvider (name="Datos login inválido XML")
+	public static Object[][] datosXML() throws Exception{
+		String rutaXML= "..\\EducacionIt\\Recursos\\Datos.xml";
+		String tagDatos="Usuario";
+		Object[][] datos= DatosXML.leerXML(rutaXML, tagDatos);
+		return datos;
+	}
 	
 	@AfterSuite
 	public void quit() {

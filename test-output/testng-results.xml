@@ -1,54 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7673" started-at="2020-09-28T20:19:50 ART" finished-at="2020-09-28T20:19:58 ART">
+  <suite name="Default suite" duration-ms="112161" started-at="2020-09-28T21:42:53 ART" finished-at="2020-09-28T21:44:45 ART">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7673" started-at="2020-09-28T20:19:50 ART" finished-at="2020-09-28T20:19:58 ART">
-      <class name="pruebas.Test_Laboratorio4_E2">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="setUp" is-config="true" duration-ms="12194" started-at="2020-09-28T20:19:38 ART" finished-at="2020-09-28T20:19:50 ART">
+    <test name="Default test" duration-ms="112161" started-at="2020-09-28T21:42:53 ART" finished-at="2020-09-28T21:44:45 ART">
+      <class name="pruebas.Test_Laboratorio4_E1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:pruebas.Test_Laboratorio4_E1@302552ec]" name="setUp" is-config="true" duration-ms="13400" started-at="2020-09-28T21:42:40 ART" finished-at="2020-09-28T21:42:53 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="crearCuentaInvalida(java.lang.String)[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="crearCuentaInvalida" duration-ms="2457" started-at="2020-09-28T20:19:51 ART" data-provider="Datos registro inválido XLSX" finished-at="2020-09-28T20:19:54 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[email]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="ingresoCuentaInvalida(java.lang.String, java.lang.String)[pri:0, instance:pruebas.Test_Laboratorio4_E1@302552ec]" name="ingresoCuentaInvalida" duration-ms="0" started-at="2020-09-28T21:44:45 ART" description="Prueba Login inválido" data-provider="Datos login inválido XML" finished-at="2020-09-28T21:44:45 ART">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: ..\EducacionIt\Recursos\Datos1.xml (El sistema no puede encontrar el archivo especificado)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: ..\EducacionIt\Recursos\Datos1.xml (El sistema no puede encontrar el archivo especificado)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.FileNotFoundException: ..\EducacionIt\Recursos\Datos1.xml (El sistema no puede encontrar el archivo especificado)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at utilidades.DatosXML.leerXML(DatosXML.java:14)
+at pruebas.Test_Laboratorio4_E1.datosXML(Test_Laboratorio4_E1.java:65)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crearCuentaInvalida -->
-        <test-method status="PASS" signature="crearCuentaInvalida(java.lang.String)[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="crearCuentaInvalida" duration-ms="2014" started-at="2020-09-28T20:19:54 ART" data-provider="Datos registro inválido XLSX" finished-at="2020-09-28T20:19:56 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[email2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- crearCuentaInvalida -->
-        <test-method status="PASS" signature="crearCuentaInvalida(java.lang.String)[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="crearCuentaInvalida" duration-ms="1982" started-at="2020-09-28T20:19:56 ART" data-provider="Datos registro inválido XLSX" finished-at="2020-09-28T20:19:58 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[email3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- crearCuentaInvalida -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:pruebas.Test_Laboratorio4_E2@17579e0f]" name="quit" is-config="true" duration-ms="1327" started-at="2020-09-28T20:19:58 ART" finished-at="2020-09-28T20:19:59 ART">
+        </test-method> <!-- ingresoCuentaInvalida -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:pruebas.Test_Laboratorio4_E1@302552ec]" name="quit" is-config="true" duration-ms="1486" started-at="2020-09-28T21:44:46 ART" finished-at="2020-09-28T21:44:47 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- pruebas.Test_Laboratorio4_E2 -->
+      </class> <!-- pruebas.Test_Laboratorio4_E1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
